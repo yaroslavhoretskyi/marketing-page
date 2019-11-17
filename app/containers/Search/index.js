@@ -8,16 +8,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Transport } from '../Transport';
+import { TravelDirection } from '../TravelDirection';
 
 export function Search() {
   return (
     <div className="box">
-      {/* <span className="icon is-left">
-        <FontAwesomeIcon icon={faSearch} />
-      </span> */}
       <div className="columns">
         <div className="column">
           <Transport />
+        </div>
+        <div className="column">
+          <TravelDirection />
         </div>
       </div>
     </div>

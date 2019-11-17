@@ -33,8 +33,8 @@ export function Transport() {
     }
   `;
 
-  const [isActive, setIsActive] = useState(false);
   const [value, setValue] = useState(faPlane);
+  const [isActive, setIsActive] = useState(false);
 
   const handleOnClick = () => {
     setIsActive(!isActive);
