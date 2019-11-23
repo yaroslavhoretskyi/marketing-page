@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import classnames from 'classnames';
+import styled from 'styled-components';
 
 export function Menu() {
   const [isActive, setIsActive] = useState(false);
@@ -17,6 +18,12 @@ export function Menu() {
   const handleOnClick = () => {
     setIsActive(!isActive);
   };
+
+  const Item = styled.div`
+    &:hover {
+      font-weight: 600;
+    }
+  `;
 
   return (
     <div>
@@ -52,19 +59,17 @@ export function Menu() {
           className={classnames('navbar-menu', { 'is-active': isActive })}
         >
           <div className="navbar-start">
-            <div className="navbar-item">Home</div>
+            <Item className="navbar-item">Główna strona</Item>
 
-            <div className="navbar-item">Documentation</div>
+            <Item className="navbar-item">Informacja</Item>
 
             <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">More</div>
+              <Item className="navbar-link">More</Item>
 
               <div className="navbar-dropdown">
-                <div className="navbar-item">About</div>
-                <div className="navbar-item">Jobs</div>
-                <div className="navbar-item">Contact</div>
-                <hr className="navbar-divider" />
-                <div className="navbar-item">Report an issue</div>
+                <Item className="navbar-item">O nas</Item>
+                <Item className="navbar-item">Praca</Item>
+                <Item className="navbar-item">Kontakty</Item>
               </div>
             </div>
           </div>
