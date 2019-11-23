@@ -6,13 +6,23 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+
+import Menu from 'containers/Menu';
+import MainImage from 'containers/MainImage';
+import Information from 'containers/Information';
+import ImageCarousel from 'containers/ImageCarousel';
+import MainMenu from 'containers/MainMenu';
+import ItemList from '../ItemList';
 
 export default function HomePage() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <>
+      <Menu />
+      <MainImage />
+      <Information />
+      <ImageCarousel />
+      <MainMenu />
+      <ItemList />
+    </>
   );
 }
