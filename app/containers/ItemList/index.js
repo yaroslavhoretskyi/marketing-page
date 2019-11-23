@@ -15,7 +15,7 @@ const Line = styled.div`
   border-bottom-color: #fff;
 `;
 
-export const ItemList = ({ items, paddingless }) => (
+export const ItemList = ({ items, paddingless, line }) => (
   <div className="container">
     <div
       className={classnames('section', { 'is-paddingles-top': paddingless })}
@@ -25,7 +25,7 @@ export const ItemList = ({ items, paddingless }) => (
           <div className={classnames('column')}>{i}</div>
         ))}
       </div>
-      <Line />
+      {line && <Line />}
     </div>
   </div>
 );

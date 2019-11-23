@@ -16,6 +16,7 @@ import MainMenu from 'containers/MainMenu';
 import ItemList from '../ItemList';
 import Hotel from '../Hotel';
 import Square from '../Square';
+import Footer from '../Footer';
 
 const hotelList = [
   <Hotel
@@ -96,13 +97,14 @@ export default function HomePage() {
       <Information />
       <ImageCarousel />
       <MainMenu />
-      <ItemList items={hotelList} columns="is-one-fifth" />
+      <ItemList items={hotelList} line />
       <div className="container">
         <Text className="section is-paddingless has-text-centered">
           Wszystkie oferty >
         </Text>
       </div>
       <ItemList items={squreItems} paddingless />
+      <Footer />
     </>
   );
 }

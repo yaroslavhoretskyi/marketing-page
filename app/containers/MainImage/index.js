@@ -21,6 +21,10 @@ const Section = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .title {
+        color: #ffa31a;
+      }
     }
   }
 `;
