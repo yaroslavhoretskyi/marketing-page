@@ -18,36 +18,36 @@ const Text = styled.div`
 `;
 
 const First = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url('https://centralpenn.aaa.com/sites/default/files/styles/large_xl/public/2019-06/Travel_Hero.jpg?itok=fOnfD80N');
+  height: 600px;
   display: flex;
   justify-content: flex-end;
   padding: 10px;
 `;
 const Second = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url('https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1540782331/aykon-hotel-by-roberto-cavalli-DUBAIHOTELS1018.jpg?itok=j_GBeU8m');
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+  height: 600px;
 `;
 const Third = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url('https://blackplatinumgold.com/wp-content/uploads/2018/09/Serata-Rolex-Quisisana-Capri.jpg');
+  height: 600px;
   display: flex;
   justify-content: flex-end;
   padding: 10px;
 `;
 const Fours = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url('https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/45/47/45477_v5.jpeg');
+  height: 600px;
   display: flex;
   justify-content: flex-end;
   padding: 10px;
 `;
 const Fifth = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url('https://www.travelweekly.com/uploadedImages/All_TW_Art/2019/0805/T0805BEIZhaolongHotel_HR.jpg?n=1506&width=1540&height=866&mode=crop&Anchor=MiddleCenter');
+  height: 600px;
   display: flex;
   justify-content: flex-end;
   padding: 10px;

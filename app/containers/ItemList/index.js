@@ -5,57 +5,30 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import classnames from 'classnames';
 
-import Hotel from '../Hotel';
+const Line = styled.div`
+  border: 1px solid #000;
+  border-bottom-color: #fff;
+`;
 
-const hotelList = [
-  <Hotel
-    rating="4.4"
-    price="1 699 zł/os"
-    information="7 dni TUI Polska"
-    name="Titan Select"
-  />,
-  <Hotel
-    rating="4.4"
-    price="1 699 zł/os"
-    information="7 dni TUI Polska"
-    name="Titan Select"
-  />,
-  <Hotel
-    rating="4.4"
-    price="1 699 zł/os"
-    information="7 dni TUI Polska"
-    name="Titan Select"
-  />,
-  <Hotel
-    rating="4.4"
-    price="1 699 zł/os"
-    information="7 dni TUI Polska"
-    name="Titan Select"
-  />,
-  <Hotel
-    rating="4.4"
-    price="1 699 zł/os"
-    information="7 dni TUI Polska"
-    name="Titan Select"
-  />,
-];
-
-export function ItemList() {
-  return (
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          {hotelList.map(i => (
-            <div className="column is-one-fifth">{i}</div>
-          ))}
-        </div>
+export const ItemList = ({ items, paddingless }) => (
+  <div className="container">
+    <div
+      className={classnames('section', { 'is-paddingles-top': paddingless })}
+    >
+      <div className="columns">
+        {items.map(i => (
+          <div className={classnames('column')}>{i}</div>
+        ))}
       </div>
+      <Line />
     </div>
-  );
-}
+  </div>
+);
 
 function mapDispatchToProps(dispatch) {
   return {

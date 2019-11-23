@@ -15,12 +15,12 @@ const Item = styled.div`
   flex-direction: column;
   min-height: 200px;
   min-width: 100px;
-  height: 300px;
+  height: 250px;
   max-width: 300px;
 `;
 const Image = styled.div`
-  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-  height: 200px;
+  background-image: url(${props => props.picture});
+  height: 150px;
   position: relative;
 `;
 const Name = styled.div`
@@ -37,14 +37,15 @@ const Stars = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #f2f2f2;
+  background-color: #66ccff;
   margin: 10px;
   border-radius: 10px;
   width: 80px;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.8;
   text-align: center;
-  color: #334;
+  color: #000099;
+  font-weight: 600;
   font-size: 25px;
 `;
 const Price = styled.div`
@@ -56,9 +57,9 @@ const Price = styled.div`
   font-weight: 500;
 `;
 
-export const Hotel = ({ rating, name, price, information }) => (
+export const Hotel = ({ rating, name, price, information, picture }) => (
   <Item>
-    <Image>
+    <Image picture={picture}>
       <Stars>
         <div>{rating}</div>
       </Stars>
