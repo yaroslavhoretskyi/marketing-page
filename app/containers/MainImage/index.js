@@ -36,7 +36,9 @@ export function MainImage() {
         <div className="hero-body">
           <div className="container">
             <div className="title is-size-2 has-text-centered">
-              Biuro Podróży
+              PRESTISSMO
+              <br />
+              Podróż życia w 5 minut!
             </div>
             <Search />
           </div>

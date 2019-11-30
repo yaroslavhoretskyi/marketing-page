@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import CookieConsent from 'react-cookie-consent';
 
 const FooterElement = styled.div`
   background-color: #ffa31a;
@@ -202,46 +203,65 @@ export const Footer = () => {
 
   return (
     <FooterElement>
+      <CookieConsent
+        flipButtons
+        buttonText="Akceptuję"
+        buttonStyle={{ background: '', color: 'black' }}
+      >
+        <span style={{ fontSize: '10px' }}>
+          Ustawienia prywatności i plików cookies W celu poprawienia jakości
+          usług, dostosowania zawartości strony do potrzeb użytkowników, a także
+          korzystania z narzędzi analitycznych, reklamowych i społecznościowych,
+          korzystamy z plików cookies i pochodnych technologii. Klikając
+          przycisk „Akceptuję” lub pozostając na stronie, wyrażasz zgodę na
+          przechowywanie plików cookies w Twoim urządzeniu, ich wykorzystywanie
+          oraz przekazywanie informacji o zachowaniu w sieci w celu wyświetlania
+          reklam personalizowanych w serwisach społecznościowych i na innych
+          stronach.
+        </span>
+      </CookieConsent>
       <div className="container">
-        <div className="columns has-text-centered">
-          <div className="column">
-            <div>Infolinia i rezerwacja</div>
-            <div className="is-size-4">71 343 76 233</div>
-          </div>
-          <div className="column">
-            <div>Jesteśmy do Państwa dyspozycji</div>
-            <div>Pn-Pt: 8:00-23:00</div>
-            <div>So-Nd: 9:00-23:00</div>
-          </div>
-          <div className="column">
-            <div>Salony podróży</div>
-            <div
-              className={classnames('dropdown is-up', {
-                'is-active': isActive,
-              })}
-            >
-              <div className="dropdown-trigger">
-                <button
-                  className="button"
-                  aria-haspopup="true"
-                  type="button"
-                  aria-controls="dropdown-menu"
-                  onClick={handleOnClick}
-                >
-                  <span>Znajdź Salony</span>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon icon={faAngleDown} />
-                  </span>
-                </button>
-              </div>
-              <div className="dropdown-menu" id="dropdown-menu" role="menu">
-                <div
-                  className="dropdown-content"
-                  style={{ overflow: 'auto', maxHeight: '13em' }}
-                >
-                  {numbers.map(i => (
-                    <Div>{i}</Div>
-                  ))}
+        <div classNam="section">
+          <div className="columns has-text-centered">
+            <div className="column">
+              <div className="is-size-5">Infolinia i rezerwacja</div>
+              <div className="is-size-6">12 345 67 890</div>
+            </div>
+            <div className="column">
+              <div className="is-size-5">Jesteśmy do Państwa dyspozycji</div>
+              <div className="is-size-6">Pn-Pt: 8:00-23:00</div>
+              <div className="is-size-6">So-Nd: 9:00-23:00</div>
+            </div>
+            <div className="column">
+              <div className="is-size-5">Salony podróży</div>
+              <div
+                className={classnames('dropdown is-up', {
+                  'is-active': isActive,
+                })}
+              >
+                <div className="dropdown-trigger">
+                  <button
+                    className="button"
+                    aria-haspopup="true"
+                    type="button"
+                    aria-controls="dropdown-menu"
+                    onClick={handleOnClick}
+                  >
+                    <span>Znajdź Salony</span>
+                    <span className="icon is-small">
+                      <FontAwesomeIcon icon={faAngleDown} />
+                    </span>
+                  </button>
+                </div>
+                <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div
+                    className="dropdown-content"
+                    style={{ overflow: 'auto', maxHeight: '13em' }}
+                  >
+                    {numbers.map(i => (
+                      <Div>{i}</Div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

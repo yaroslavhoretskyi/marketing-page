@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import classnames from 'classnames';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export function Menu() {
   const [isActive, setIsActive] = useState(false);
@@ -69,12 +69,18 @@ export function Menu() {
             </Item>
 
             <div className="navbar-item has-dropdown is-hoverable">
-              <Item className="navbar-link">More</Item>
+              <Item className="navbar-link">Więcej</Item>
 
               <div className="navbar-dropdown">
-                <Item className="navbar-item">O nas</Item>
-                <Item className="navbar-item">Praca</Item>
-                <Item className="navbar-item">Kontakty</Item>
+                <Link className="navbar-item" to="/about-us">
+                  O nas
+                </Link>
+                <Link className="navbar-item" to="/jobs">
+                  Praca
+                </Link>
+                <Link className="navbar-item" to="/contact">
+                  Kontakt
+                </Link>
               </div>
             </div>
           </div>
