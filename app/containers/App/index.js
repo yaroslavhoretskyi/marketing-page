@@ -12,6 +12,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import JobOffert from 'containers/JobOffert/Loadable';
+import AboutUs from 'containers/AboutUs/Loadable';
+import Contact from 'containers/Contact/Loadable';
 
 import GlobalStyle from '../../global-styles';
 
@@ -20,6 +23,9 @@ export default function App() {
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/jobs" component={JobOffert} />
+        <Route path="/about-us" component={AboutUs} />
+        <Route path="/contact" component={Contact} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
