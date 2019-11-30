@@ -15,7 +15,7 @@ import CookieConsent from 'react-cookie-consent';
 
 const FooterElement = styled.div`
   background-color: #ffa31a;
-  height: 100px;
+  height: auto;
 `;
 
 const Div = styled.div`
