@@ -32,7 +32,7 @@ export function Menu() {
         <div className="navbar-brand">
           <div className="navbar-item" href="https://bulma.io">
             <img
-              src="https://bulma.io/images/bulma-logo.png"
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/s2048x2048/79004074_439486490060420_5995817385083273216_n.png?_nc_cat=101&_nc_ohc=dzptC0AmkfMAQlPNrZzVp1h5PibG63AGQJgL_ByeRHWFgpz3I8hcz03Ag&_nc_ad=z-m&_nc_cid=0&_nc_zor=9&_nc_ht=scontent.xx&oh=966239a84b4671fc64e0e86b7bcdf472&oe=5E75413A"
               width="112"
               height="28"
               alt="Logo"
