@@ -15,6 +15,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
 import { OfferPage } from '../OfferPage';
+import { InfoPage } from '../InfoPage';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/offer/:id" component={OfferPage} />
+        <Route exact path="/info" component={InfoPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

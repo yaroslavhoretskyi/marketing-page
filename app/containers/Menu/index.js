@@ -64,7 +64,9 @@ export function Menu() {
               <NavLink to="/">Główna strona</NavLink>
             </Item>
 
-            <Item className="navbar-item">Informacja</Item>
+            <Item className="navbar-item">
+              <NavLink to="/info">Informacja</NavLink>
+            </Item>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <Item className="navbar-link">More</Item>
