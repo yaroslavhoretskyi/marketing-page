@@ -97,7 +97,7 @@ export default function HomePage() {
       <Information />
       <ImageCarousel />
       <MainMenu />
-      <ItemList items={hotelList} line />
+      <ItemList items={hotelList} line links />
       <div className="container">
         <Text className="section is-paddingless has-text-centered">
           Wszystkie oferty >

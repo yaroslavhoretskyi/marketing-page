@@ -203,47 +203,45 @@ export const Footer = () => {
   return (
     <FooterElement>
       <div className="container">
-        <div classNam="section">
-          <div className="columns has-text-centered">
-            <div className="column">
-              <div>Infolinia i rezerwacja</div>
-              <div className="is-size-4">71 343 76 233</div>
-            </div>
-            <div className="column">
-              <div>Jesteśmy do Państwa dyspozycji</div>
-              <div>Pn-Pt: 8:00-23:00</div>
-              <div>So-Nd: 9:00-23:00</div>
-            </div>
-            <div className="column">
-              <div>Salony podróży</div>
-              <div
-                className={classnames('dropdown is-up', {
-                  'is-active': isActive,
-                })}
-              >
-                <div className="dropdown-trigger">
-                  <button
-                    className="button"
-                    aria-haspopup="true"
-                    type="button"
-                    aria-controls="dropdown-menu"
-                    onClick={handleOnClick}
-                  >
-                    <span>Znajdź Salony</span>
-                    <span className="icon is-small">
-                      <FontAwesomeIcon icon={faAngleDown} />
-                    </span>
-                  </button>
-                </div>
-                <div className="dropdown-menu" id="dropdown-menu" role="menu">
-                  <div
-                    className="dropdown-content"
-                    style={{ overflow: 'auto', maxHeight: '13em' }}
-                  >
-                    {numbers.map(i => (
-                      <Div>{i}</Div>
-                    ))}
-                  </div>
+        <div className="columns has-text-centered">
+          <div className="column">
+            <div>Infolinia i rezerwacja</div>
+            <div className="is-size-4">71 343 76 233</div>
+          </div>
+          <div className="column">
+            <div>Jesteśmy do Państwa dyspozycji</div>
+            <div>Pn-Pt: 8:00-23:00</div>
+            <div>So-Nd: 9:00-23:00</div>
+          </div>
+          <div className="column">
+            <div>Salony podróży</div>
+            <div
+              className={classnames('dropdown is-up', {
+                'is-active': isActive,
+              })}
+            >
+              <div className="dropdown-trigger">
+                <button
+                  className="button"
+                  aria-haspopup="true"
+                  type="button"
+                  aria-controls="dropdown-menu"
+                  onClick={handleOnClick}
+                >
+                  <span>Znajdź Salony</span>
+                  <span className="icon is-small">
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </button>
+              </div>
+              <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                <div
+                  className="dropdown-content"
+                  style={{ overflow: 'auto', maxHeight: '13em' }}
+                >
+                  {numbers.map(i => (
+                    <Div>{i}</Div>
+                  ))}
                 </div>
               </div>
             </div>
