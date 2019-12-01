@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export function Menu() {
   const [isActive, setIsActive] = useState(false);
@@ -59,7 +60,9 @@ export function Menu() {
           className={classnames('navbar-menu', { 'is-active': isActive })}
         >
           <div className="navbar-start">
-            <Item className="navbar-item">Główna strona</Item>
+            <Item className="navbar-item">
+              <NavLink to="/">Główna strona</NavLink>
+            </Item>
 
             <Item className="navbar-item">Informacja</Item>
 
