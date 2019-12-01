@@ -13,6 +13,19 @@ import classnames from 'classnames';
 const Line = styled.div`
   border: 1px solid #000;
   border-bottom-color: #fff;
+  margin-top: 5px;
+`;
+
+const Item = styled.div`
+  &:hover {
+    cursor: pointer;
+
+    background-color: #dcf9fa;
+    border-radius: 10px;
+  }
+
+  padding: 5px;
+  margin: 5px;
 `;
 
 export const ItemList = ({ items, paddingless, line }) => (
@@ -22,7 +35,9 @@ export const ItemList = ({ items, paddingless, line }) => (
     >
       <div className="columns">
         {items.map(i => (
-          <div className={classnames('column')}>{i}</div>
+          <div className={classnames('column')}>
+            <Item>{i}</Item>
+          </div>
         ))}
       </div>
       {line && <Line />}

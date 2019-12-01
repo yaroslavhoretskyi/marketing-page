@@ -16,7 +16,7 @@ const Image = styled.div`
     div {
       background-image: url(${props => props.picture});
       border-radius: 5px;
-      width: 250px;
+      width: 280px;
       height: 200px;
       display: flex;
       justify-content: center;
