@@ -44,7 +44,7 @@ export const ImageChanger = ({ images }) => {
     <div className="columns">
       <div className="column is-one-fifth">
         {images.map(i => (
-          <div onClick={() => handleOnClick(i)}>
+          <div key={i.toString()} onClick={() => handleOnClick(i)}>
             <Item src={i} alt="hotel" />
           </div>
         ))}

@@ -6,6 +6,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import classnames from 'classnames';
@@ -28,17 +29,25 @@ const Item = styled.div`
   margin: 5px;
 `;
 
-export const ItemList = ({ items, paddingless, line }) => (
+export const ItemList = ({ items, paddingless, line, links }) => (
   <div className="container">
     <div
       className={classnames('section', { 'is-paddingles-top': paddingless })}
     >
       <div className="columns">
-        {items.map(i => (
-          <div className={classnames('column')}>
-            <Item>{i}</Item>
-          </div>
-        ))}
+        {links
+          ? items.map((e, i) => (
+              <div className={classnames('column')}>
+                <NavLink to={`/offer/${i}`}>
+                  <Item>{e}</Item>
+                </NavLink>
+              </div>
+            ))
+          : items.map(e => (
+              <div className={classnames('column')}>
+                <Item>{e}</Item>
+              </div>
+            ))}
       </div>
       {line && <Line />}
     </div>
