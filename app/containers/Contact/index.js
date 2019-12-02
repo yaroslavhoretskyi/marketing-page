@@ -9,7 +9,7 @@ import React from 'react';
 // import styled from 'styled-components';
 
 import Menu from 'containers/Menu';
-// import MainImage from 'containers/MainImage';
+import MainImage from 'containers/MainImage';
 // import Information from 'containers/Information';
 // import ImageCarousel from 'containers/ImageCarousel';
 // import MainMenu from 'containers/MainMenu';

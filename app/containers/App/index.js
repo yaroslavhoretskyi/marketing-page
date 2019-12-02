@@ -26,11 +26,11 @@ export default function App() {
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/offer/:id" component={OfferPage} />
-        <Route exact path="/info" component={InfoPage} />
         <Route path="/jobs" component={JobOffert} />
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contact" component={Contact} />
+        <Route exact path="/offer/:id" component={OfferPage} />
+        <Route exact path="/info" component={InfoPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
