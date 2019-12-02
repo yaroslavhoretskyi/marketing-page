@@ -35,18 +35,20 @@ export function MainImage() {
     <>
       <Section className="hero image">
         <div className="hero-body">
-          <div className="container">
-            <div className="title is-size-2 has-text-centered">
-              <Badge variant="dark" style={{ margin: '10px' }}>
-                PRESTISSMO
-              </Badge>
-              <br />
-              <Badge variant="dark" style={{ margin: '10px' }}>
-                Podróż życia w 5 minut!
-              </Badge>
-            </div>
-            <div>
-              <Search />
+          <div className="columns is-multiline">
+            <div className="column is-full">
+              <div className="title is-size-2 has-text-centered">
+                <Badge variant="dark" style={{ margin: '10px' }}>
+                  PRESTISSMO
+                </Badge>
+                <br />
+                <Badge variant="dark" style={{ margin: '10px' }}>
+                  Podróż życia w 5 minut!
+                </Badge>
+              </div>
+              <div className="column is-full">
+                <Search />
+              </div>
             </div>
           </div>
         </div>
