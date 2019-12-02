@@ -25,7 +25,6 @@ export const ItemList = ({ items, paddingless, line }) => (
           <div className={classnames('column')}>{i}</div>
         ))}
       </div>
-      {line && <Line />}
     </div>
   </div>
 );
