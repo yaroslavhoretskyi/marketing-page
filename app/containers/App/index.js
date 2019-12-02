@@ -15,6 +15,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import JobOffert from 'containers/JobOffert/Loadable';
 import AboutUs from 'containers/AboutUs/Loadable';
 import Contact from 'containers/Contact/Loadable';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import GlobalStyle from '../../global-styles';
 import { OfferPage } from '../OfferPage';

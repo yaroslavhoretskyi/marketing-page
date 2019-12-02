@@ -9,9 +9,10 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Search } from '../Search';
+import { Badge } from 'react-bootstrap';
 
 const Section = styled.section`
-  background-image: url('https://wallpaperplay.com/walls/full/6/f/e/3065.jpg');
+  background-image: url('https://i.imgur.com/W0woZph.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 350px;
@@ -23,7 +24,7 @@ const Section = styled.section`
       align-items: center;
 
       .title {
-        color: #ffa31a;
+        color: #fad066;
       }
     }
   }
@@ -36,11 +37,17 @@ export function MainImage() {
         <div className="hero-body">
           <div className="container">
             <div className="title is-size-2 has-text-centered">
-              PRESTISSMO
+              <Badge variant="dark" style={{ margin: '10px' }}>
+                PRESTISSMO
+              </Badge>
               <br />
-              Podróż życia w 5 minut!
+              <Badge variant="dark" style={{ margin: '10px' }}>
+                Podróż życia w 5 minut!
+              </Badge>
             </div>
-            <Search />
+            <div>
+              <Search />
+            </div>
           </div>
         </div>
       </Section>

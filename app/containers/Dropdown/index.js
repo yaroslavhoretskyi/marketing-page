@@ -10,6 +10,7 @@ import { compose } from 'redux';
 import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import Button from 'react-bootstrap/Button';
 
 export const Dropdown = ({ name }) => {
   const [isActive, setIsActive] = useState(false);
