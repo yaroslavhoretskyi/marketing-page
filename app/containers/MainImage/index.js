@@ -8,8 +8,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { Search } from '../Search';
 import { Badge } from 'react-bootstrap';
+import { Search } from '../Search';
 
 const Section = styled.section`
   background-image: url('https://i.imgur.com/W0woZph.png');

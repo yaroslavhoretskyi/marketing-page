@@ -13,14 +13,21 @@ import MainImage from 'containers/MainImage';
 import Information from 'containers/Information';
 import ImageCarousel from 'containers/ImageCarousel';
 import MainMenu from 'containers/MainMenu';
+import * as Fa from 'react-icons/fa';
+import {
+  Button,
+  Badge,
+  Card,
+  CardDeck,
+  Carusel,
+  CarouselItem,
+} from 'react-bootstrap';
 import ItemList from '../ItemList';
 import CaruselList from '../CaruselList';
 import Hotel from '../Hotel';
 import Square from '../Square';
 import Slide from '../Slide';
 import Footer from '../Footer';
-import * as Fa from 'react-icons/fa';
-import { Button, Badge, Card, CardDeck, Carusel, CarouselItem } from 'react-bootstrap';
 
 const hotelItems = [
   <Hotel
@@ -83,7 +90,7 @@ const squreItems = [
 ];
 
 const Text = styled.div`
-  color: #2449AD;
+  color: #2449ad;
   font-size: 25px;
   font-weight: 400;
   && {
@@ -104,7 +111,7 @@ export default function HomePage() {
       <ItemList items={hotelItems} />
       <div className="container">
         <Text className="section is-paddingless has-text-centered">
-          WSZYSTKIE OFERTY <Fa.FaAngleDoubleRight/>
+          WSZYSTKIE OFERTY <Fa.FaAngleDoubleRight />
         </Text>
       </div>
       <ItemList items={squreItems} paddingless />

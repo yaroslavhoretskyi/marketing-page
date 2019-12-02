@@ -68,27 +68,37 @@ export function ImageCarousel() {
       <Slider {...settings}>
         <div>
           <First>
-            <Text className="is-size-3"><Badge variant="light">1 699 PLN</Badge></Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 699 PLN</Badge>
+            </Text>
           </First>
         </div>
         <div>
           <Second>
-            <Text className="is-size-3"><Badge variant="light">1 350 zł</Badge></Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 350 zł</Badge>
+            </Text>
           </Second>
         </div>
         <div>
           <Third>
-            <Text className="is-size-3"><Badge variant="light">2 500 zł</Badge></Text>
+            <Text className="is-size-3">
+              <Badge variant="light">2 500 zł</Badge>
+            </Text>
           </Third>
         </div>
         <div>
           <Fours>
-            <Text className="is-size-3"><Badge variant="light">3 000 zł</Badge></Text>
+            <Text className="is-size-3">
+              <Badge variant="light">3 000 zł</Badge>
+            </Text>
           </Fours>
         </div>
         <div>
           <Fifth>
-            <Text className="is-size-3"><Badge variant="light">1 999 zł</Badge></Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 999 zł</Badge>
+            </Text>
           </Fifth>
         </div>
       </Slider>

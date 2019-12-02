@@ -98,7 +98,10 @@ export const Footer = () => {
       </CookieConsent>
       <div className="container">
         <div classNam="section">
-          <div className="columns has-text-centered" style={{paddingTop: '10px'}}>
+          <div
+            className="columns has-text-centered"
+            style={{ paddingTop: '10px' }}
+          >
             <div className="column">
               <div style={{ paddingBottom: '10px' }}>{phoneIcon}</div>
               <b>INFOLINIA I REZERWACJA</b>
