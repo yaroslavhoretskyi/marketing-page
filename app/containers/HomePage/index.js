@@ -26,7 +26,6 @@ import ItemList from '../ItemList';
 import Hotel from '../Hotel';
 import Square from '../Square';
 import Footer from '../Footer';
-import * as Fa from 'react-icons/fa';
 
 const hotelItems = [
   <Hotel
