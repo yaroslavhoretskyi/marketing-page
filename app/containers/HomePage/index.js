@@ -13,12 +13,6 @@ import MainImage from 'containers/MainImage';
 import Information from 'containers/Information';
 import ImageCarousel from 'containers/ImageCarousel';
 import MainMenu from 'containers/MainMenu';
-import ItemList from '../ItemList';
-import CaruselList from '../CaruselList';
-import Hotel from '../Hotel';
-import Square from '../Square';
-import Slide from '../Slide';
-import Footer from '../Footer';
 import * as Fa from 'react-icons/fa';
 import {
   Button,
@@ -28,6 +22,13 @@ import {
   Carusel,
   CarouselItem,
 } from 'react-bootstrap';
+import ItemList from '../ItemList';
+import CaruselList from '../CaruselList';
+import Hotel from '../Hotel';
+import Square from '../Square';
+import Slide from '../Slide';
+import Footer from '../Footer';
+import * as Fa from 'react-icons/fa';
 
 const hotelItems = [
   <Hotel

@@ -43,7 +43,7 @@ const Stars = styled.div`
   margin: 10px;
   opacity: 0.8;
   text-align: center;
-  font-size: 15px
+  font-size: 15px;
 `;
 const Price = styled.div`
   position: absolute;
@@ -55,21 +55,22 @@ const Price = styled.div`
 `;
 
 export const Hotel = ({ rating, name, price, information, picture }) => (
-
   <CardDeck>
     <Card>
-    <Card.Img variant="top" src={picture} />
-    <Stars><Badge variant="light">{rating} <Fa.FaStar/></Badge></Stars>
-    <Card.Body>
-      <Card.Title>{name}</Card.Title>
-      <Card.Text>
-        {information}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">{price}</small>
-    </Card.Footer>
-  </Card>
+      <Card.Img variant="top" src={picture} />
+      <Stars>
+        <Badge variant="light">
+          {rating} <Fa.FaStar />
+        </Badge>
+      </Stars>
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{information}</Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        <small className="text-muted">{price}</small>
+      </Card.Footer>
+    </Card>
   </CardDeck>
 );
 

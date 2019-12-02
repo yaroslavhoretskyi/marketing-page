@@ -19,7 +19,7 @@ const items = [
   'All inclusive',
   'Kreta 2020',
   'Lato',
-  'Zima'
+  'Zima',
 ];
 
 export function MainMenu() {
