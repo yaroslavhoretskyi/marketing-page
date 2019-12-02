@@ -13,12 +13,21 @@ import MainImage from 'containers/MainImage';
 import Information from 'containers/Information';
 import ImageCarousel from 'containers/ImageCarousel';
 import MainMenu from 'containers/MainMenu';
+import * as Fa from 'react-icons/fa';
+import {
+  Button,
+  Badge,
+  Card,
+  CardDeck,
+  Carusel,
+  CarouselItem,
+} from 'react-bootstrap';
 import ItemList from '../ItemList';
 import Hotel from '../Hotel';
 import Square from '../Square';
 import Footer from '../Footer';
 
-const hotelList = [
+const hotelItems = [
   <Hotel
     rating="4.4"
     price="1 699 zł/os"
@@ -59,27 +68,27 @@ const hotelList = [
 const squreItems = [
   <Square
     picture="http://www.nccp.org/publications/images/istock-839295596.jpg"
-    text="Dla rodzin z dziećmi"
+    text="DLA RODZIN Z DZIEĆMI"
   />,
 
   <Square
     picture="https://ubr.ua/img/article/2082/81_m2.jpg"
-    text="Praca na wakacji"
+    text="ODPOCZYNEK OD PRACY"
   />,
 
   <Square
     picture="https://marmarisavantaj.com/wp-content/uploads/2019/02/marmaris-dal%C4%B1S-turu-marmaris-tuplu-dal%C4%B1s-KUCUK-Urun-fotalar-7-min.jpg"
-    text="Dla aktywnych"
+    text="DLA AKTYWNYCH"
   />,
 
   <Square
     picture="https://miridej.ru/images/pliaz-400x300.jpg"
-    text="Hotele przy plaźy"
+    text="HOTELE PRZY PLAŻACH"
   />,
 ];
 
 const Text = styled.div`
-  color: #ffa31a;
+  color: #2449ad;
   font-size: 25px;
   font-weight: 400;
   && {
@@ -97,10 +106,10 @@ export default function HomePage() {
       <Information />
       <ImageCarousel />
       <MainMenu />
-      <ItemList items={hotelList} line links />
+      <ItemList items={hotelItems} />
       <div className="container">
         <Text className="section is-paddingless has-text-centered">
-          Wszystkie oferty >
+          WSZYSTKIE OFERTY <Fa.FaAngleDoubleRight />
         </Text>
       </div>
       <ItemList items={squreItems} paddingless />

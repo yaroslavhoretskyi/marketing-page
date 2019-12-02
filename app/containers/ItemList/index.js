@@ -49,7 +49,6 @@ export const ItemList = ({ items, paddingless, line, links }) => (
               </div>
             ))}
       </div>
-      {line && <Line />}
     </div>
   </div>
 );

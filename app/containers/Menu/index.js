@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 export function Menu() {
@@ -60,6 +61,13 @@ export function Menu() {
           className={classnames('navbar-menu', { 'is-active': isActive })}
         >
           <div className="navbar-start">
+<<<<<<< HEAD
+            <Link className="navbar-item" to="/">
+              Strona główna
+            </Link>
+
+            <Link className="navbar-item">Informacje</Link>
+=======
             <Item className="navbar-item">
               <NavLink to="/">Główna strona</NavLink>
             </Item>
@@ -67,14 +75,21 @@ export function Menu() {
             <Item className="navbar-item">
               <NavLink to="/info">Informacja</NavLink>
             </Item>
+>>>>>>> master
 
             <div className="navbar-item has-dropdown is-hoverable">
-              <Item className="navbar-link">More</Item>
+              <Item className="navbar-link">Więcej</Item>
 
               <div className="navbar-dropdown">
-                <Item className="navbar-item">O nas</Item>
-                <Item className="navbar-item">Praca</Item>
-                <Item className="navbar-item">Kontakty</Item>
+                <Link className="navbar-item" to="/about-us">
+                  O nas
+                </Link>
+                <Link className="navbar-item" to="/jobs">
+                  Praca
+                </Link>
+                <Link className="navbar-item" to="/contact">
+                  Kontakt
+                </Link>
               </div>
             </div>
           </div>

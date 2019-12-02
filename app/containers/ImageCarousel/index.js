@@ -11,6 +11,8 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Card, CardDeck, Badge } from 'react-bootstrap';
+import * as Fa from 'react-icons/fa';
 
 const Text = styled.div`
   color: #fff;
@@ -66,27 +68,37 @@ export function ImageCarousel() {
       <Slider {...settings}>
         <div>
           <First>
-            <Text className="is-size-3">1 699 zł</Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 699 PLN</Badge>
+            </Text>
           </First>
         </div>
         <div>
           <Second>
-            <Text className="is-size-3">1 350 zł</Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 350 zł</Badge>
+            </Text>
           </Second>
         </div>
         <div>
           <Third>
-            <Text className="is-size-3">2 500 zł</Text>
+            <Text className="is-size-3">
+              <Badge variant="light">2 500 zł</Badge>
+            </Text>
           </Third>
         </div>
         <div>
           <Fours>
-            <Text className="is-size-3">3 000 zł</Text>
+            <Text className="is-size-3">
+              <Badge variant="light">3 000 zł</Badge>
+            </Text>
           </Fours>
         </div>
         <div>
           <Fifth>
-            <Text className="is-size-3">1 999 zł</Text>
+            <Text className="is-size-3">
+              <Badge variant="light">1 999 zł</Badge>
+            </Text>
           </Fifth>
         </div>
       </Slider>

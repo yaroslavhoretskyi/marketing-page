@@ -29,9 +29,6 @@ export function Search() {
           <Transport />
         </div>
         <div className="column">
-          <TravelDirection />
-        </div>
-        <div className="column">
           <DatePicker name="Wyjazd od" />
         </div>
         <div className="column">
@@ -42,6 +39,9 @@ export function Search() {
         </div>
         <div className="column">
           <Dropdown name="Dzieci" />
+        </div>
+        <div className="column">
+          <TravelDirection />
         </div>
         <div className="column">
           <Div>
