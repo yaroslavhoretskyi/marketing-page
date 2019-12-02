@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "marketing-page",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
@@ -10,9 +10,12 @@
     "npm": ">=5",
     "node": ">=8.15.1"
   },
-  "author": "Max Stoiber",
+  "homepage": "https://yaroslavhoretskyi.github.io/marketing-page",
+  "author": "Yaroslav Horetskyi, Gracjan Grala",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
     "analyze": "node ./internals/scripts/analyze.js",
@@ -80,14 +83,19 @@
     "cross-env": "5.2.0",
     "express": "4.16.4",
     "fontfaceobserver": "2.1.0",
+    "gh-pages": "^2.1.1",
     "history": "4.9.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "3.0.0",
     "intl": "1.2.5",
     "invariant": "2.2.4",
     "ip": "1.1.5",
+<<<<<<< HEAD
     "lodash": "4.17.11",
     "mdbreact": "^4.23.0",
+=======
+    "lodash": "^4.17.15",
+>>>>>>> master
     "minimist": "1.2.0",
     "node-sass": "^4.13.0",
     "prop-types": "15.7.2",
@@ -103,7 +111,7 @@
     "react-intl": "2.8.0",
     "react-redux": "7.0.2",
     "react-responsive-carousel": "^3.1.51",
-    "react-router-dom": "5.0.0",
+    "react-router-dom": "^5.1.2",
     "react-slick": "^0.25.2",
     "redux": "4.0.1",
     "redux-saga": "1.0.2",

@@ -24,6 +24,7 @@ const Image = styled.div`
   background-image: url(${props => props.picture});
   height: 150px;
   position: relative;
+  border-radius: 10px;
 `;
 const Name = styled.div`
   font-size: 26px;
