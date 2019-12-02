@@ -119,6 +119,7 @@ export const Footer = () => {
               <div style={{ paddingBottom: '10px' }}>{mapMarkIcon}</div>
               <div className="is-size-6">
                 <b>NASZE FILIE</b>
+
               </div>
               <div style={{ paddingBottom: '10px' }}>{agencies(numbers)}</div>
             </div>
