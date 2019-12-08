@@ -27,7 +27,7 @@ export function InfoPage() {
       <div className="container">
         <div className="section">
           <div className="title is-size-3 is-family-monospace">
-            Jak rezerwować w PRESSTISI?
+            Jak rezerwować w PRESSTISIMO?
           </div>
           <Image image="https://www.travelplanet.pl/Content/img/contents/static-content/how-to-book/how-to-book-banner.jpg">
             <div className="is-size-3 has-text-right">

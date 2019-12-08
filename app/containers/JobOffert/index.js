@@ -6,95 +6,110 @@
  */
 
 import React from 'react';
-// import styled from 'styled-components';
-
 import Menu from 'containers/Menu';
 import MainImage from '../MainImage';
-// import Information from 'containers/Information';
-// import ImageCarousel from 'containers/ImageCarousel';
-// import MainMenu from 'containers/MainMenu';
-// import ItemList from '../ItemList';
-// import Hotel from '../Hotel';
-// import Square from '../Square';
 import Footer from '../Footer';
-// import FooterPagePro from '../Footer/footer';
-
-// const hotelList = [
-//   <Hotel
-//     rating="4.4"
-//     price="1 699 zł/os"
-//     information="7 dni TUI Polska"
-//     name="Titan Select"
-//     picture="https://cdntravelplanet.pl/AYT57060/TUIZ/miniature275x155/turcja/alanya/konakli/titan-select_0.jpg?datago=1&t=637101869739491328"
-//   />,
-//   <Hotel
-//     rating="4.1"
-//     price="1 897 zł/os"
-//     information="10 dni TUI Polska"
-//     name="Kleopatra Atlas"
-//     picture="https://cdntravelplanet.pl/AYT61080/TUIZ/miniature275x155/turcja/alanya/alanya/kleopatra-atlas_0.jpg?datago=1&t=637106108529344766"
-//   />,
-//   <Hotel
-//     rating="4.2"
-//     price="2 100 zł/os"
-//     information="4 dni TUI Polska"
-//     name="Grand Seker"
-//     picture="https://cdntravelplanet.pl/AYT41048/TUIZ/miniature275x155/turcja/side/colakli/grand-seker_0.jpg?datago=1&t=637103024872531484"
-//   />,
-//   <Hotel
-//     rating="4.8"
-//     price="2 750 zł/os"
-//     information="7 dni TUI Polska"
-//     name="Sherwood Lara"
-//     picture="https://cdntravelplanet.pl/BOJIZOL/ITAK/miniature275x155/bulgaria/sloneczny-brzeg/sloneczny-brzeg/izola-paradise_0.jpg"
-//   />,
-//   <Hotel
-//     rating="4.1"
-//     price="1 869 zł/os"
-//     information="7 dni Itaka"
-//     name="Club Shark"
-//     picture="https://cdntravelplanet.pl/BJVSHAR/ITAK/miniature275x155/turcja/bodrum/gumbet/club-shark_0.jpg"
-//   />,
-// ];
-
-// const squreItems = [
-//   <Square
-//     picture="http://www.nccp.org/publications/images/istock-839295596.jpg"
-//     text="Dla rodzin z dziećmi"
-//   />,
-
-//   <Square
-//     picture="https://ubr.ua/img/article/2082/81_m2.jpg"
-//     text="Praca na wakacji"
-//   />,
-
-//   <Square
-//     picture="https://marmarisavantaj.com/wp-content/uploads/2019/02/marmaris-dal%C4%B1S-turu-marmaris-tuplu-dal%C4%B1s-KUCUK-Urun-fotalar-7-min.jpg"
-//     text="Dla aktywnych"
-//   />,
-
-//   <Square
-//     picture="https://miridej.ru/images/pliaz-400x300.jpg"
-//     text="Hotele przy plaźy"
-//   />,
-// ];
-
-// const Text = styled.div`
-//   color: #ffa31a;
-//   font-size: 25px;
-//   font-weight: 400;
-//   && {
-//     &:hover {
-//       font-weight: 600;
-//     }
-//   }
-// `;
+import { Container, Row, Col, Jumbotron, Image, Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faEnvelope,
+  faSearch,
+  faHandshake,
+  faInfoCircle,
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function HomePage() {
   return (
     <>
       <Menu />
       <MainImage />
+
+      <div className="container">
+        <div className="section">
+          <Jumbotron
+            fluid
+            style={{
+              background: 'none',
+              borderRadius: 10,
+              borderWidth: 1,
+              fontFamily: 'Tahoma',
+            }}
+          >
+            <Container>
+              <Row>
+                <Col align="center">
+                  <h1 align="center">REKRUTACJA</h1>
+                  <Image
+                    width="50%"
+                    src="http://s3.egospodarka.pl/grafika2/rekrutacja-pracownikow/Wolumenowa-rekrutacja-pracownikow-Jak-zachowac-standardy-195219-900x900.jpg"
+                    rounded
+                  />
+                </Col>
+              </Row>
+              <Row
+                className="justify-content-md-center"
+                style={{ marginTop: '20px' }}
+              >
+                <Col xs lg="6" style={{ textAlign: 'justify' }}>
+                  <p>
+                    Jeśli tu zajrzałeś to oznacza, że chcesz z nami tworzyć
+                    świat podróży wyjątkowych. Bardzo nas to cieszy!
+                  </p>
+                  <p>
+                    Nawet jeśli nie znasz branży turystycznej to nic nie
+                    szkodzi, na pewno masz dużą wiedzę w innej dziedzinie, którą
+                    możesz się z nami podzielić. Jesteśmy pewni że zaszczepimy w
+                    Tobie bakcyla podróżnika i razem z nami będziesz zwiedzać
+                    świat!
+                  </p>
+                </Col>
+              </Row>
+              <Row style={{ marginTop: '20px' }}>
+                <Col>
+                  <p style={{ textAlign: 'center' }}>
+                    <FontAwesomeIcon size="3x" icon={faSearch} />
+                  </p>
+                  <h5>1. Sprawdź kogo potrzebujemy</h5>
+                  <a href="#">Dostępne ogłoszenia o pracę</a>
+                </Col>
+                <Col>
+                  <p style={{ textAlign: 'center' }}>
+                    <FontAwesomeIcon size="3x" icon={faEnvelope} />
+                  </p>
+                  <h5>2. Aplikuj na wybrane stanowisko</h5>
+                  <p>
+                    Prześlij nam wypełniony formularz dostępny pod ogłoszeniem,
+                    na które chcesz aplikować.
+                  </p>
+                </Col>
+                <Col>
+                  <p style={{ textAlign: 'center' }}>
+                    <FontAwesomeIcon size="3x" icon={faHandshake} />
+                  </p>
+                  <h5>3. Spotkajmy się</h5>
+                  <p>
+                    Po pozytywnym rozpatrzeniu Twojej aplikacji będziemy chcieli
+                    Cię bliżej poznać
+                  </p>
+                  <a href="#">Dowiedz się więcej</a>
+                </Col>
+                <Col>
+                  <p style={{ textAlign: 'center' }}>
+                    <FontAwesomeIcon size="3x" icon={faInfoCircle} />
+                  </p>
+                  <h5>4. Informacja zwrotna</h5>
+                  <p>
+                    Niezależnie od decyzji poinformujemy Cię o wyniku rekrutacji
+                    telefonicznie lub mailowo.
+                  </p>
+                  <a href="#">Dowiedz się więcej</a>
+                </Col>
+              </Row>
+            </Container>
+          </Jumbotron>
+        </div>
+      </div>
+
       {/* <Information /> */}
       {/* <ImageCarousel /> */}
       {/* <MainMenu /> */}
