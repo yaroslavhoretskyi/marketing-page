@@ -134,7 +134,7 @@ export function TravelDirection() {
             </span>
           </button>
         </div>
-        <div className="dropdown-menu" id="dropdown-menu" role="menu">
+        <div className="dropdown-menu" id="dropdown-menu" role="menu" style={{ maxWidth: '200px'}}>
           <div className="dropdown-content">
             <div className="dropdown-item">
               <div>
@@ -155,19 +155,19 @@ export function TravelDirection() {
                   <div className="column" style={{ overflow: 'auto' }}>
                     <div className="label">Grupy kierunków</div>
                     {groupList.map(group => (
-                      <label className="checkbox">
+                      <label className="checkbox" style={{display:'block'}}>
                         <input type="checkbox" /> {group}
                       </label>
                     ))}
                     <div className="label">Najpopularniejsze</div>
                     {popularList.map(popular => (
-                      <label className="checkbox">
+                      <label className="checkbox"  style={{display:'block'}}>
                         <input type="checkbox" /> {popular}
                       </label>
                     ))}
                     <div className="label">Alfabetycznie</div>
                     {alphabeticalList.map(alphabetical => (
-                      <label className="checkbox">
+                      <label className="checkbox"  style={{display:'block'}}>
                         <input type="checkbox" /> {alphabetical}
                       </label>
                     ))}
@@ -175,7 +175,7 @@ export function TravelDirection() {
                   <div className="column">
                     <div className="label">Regiony, miasta</div>
                     {alphabeticalList.map(alphabetical => (
-                      <label className="checkbox">
+                      <label className="checkbox"  style={{display:'block'}}>
                         <input type="checkbox" /> {alphabetical}
                       </label>
                     ))}
