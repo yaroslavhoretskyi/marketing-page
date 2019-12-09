@@ -15,21 +15,15 @@ import { DatePicker } from '../DatePicker';
 import { Dropdown } from '../Dropdown';
 
 const Div = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
   margin-top: 23px;
 `;
 
 export function Search() {
   return (
-    <div className="box is-fullwidth">
-      <div className="columns">
+    <div className="box">
+      <div className="columns is-multiline">
         <div className="column">
           <Transport />
-        </div>
-        <div className="column">
-          <TravelDirection />
         </div>
         <div className="column">
           <DatePicker name="Wyjazd od" />
@@ -42,6 +36,9 @@ export function Search() {
         </div>
         <div className="column">
           <Dropdown name="Dzieci" />
+        </div>
+        <div className="column">
+          <TravelDirection />
         </div>
         <div className="column">
           <Div>

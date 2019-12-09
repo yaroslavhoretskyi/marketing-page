@@ -8,27 +8,10 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import { Button, ButtonGroup } from 'react-bootstrap';
+import './main-menu.css';
 
 import styled from 'styled-components';
-
-const Line = styled.div`
-  border: 1px solid #000;
-  border-bottom-color: #fff;
-`;
-const Container = styled.div`
-  && {
-    .section {
-      padding-bottom: 0px !important;
-    }
-
-    .column {
-      &:hover {
-        color: #ff751a;
-        font-weight: 500;
-      }
-    }
-  }
-`;
 
 const items = [
   'TOP Oferty',
@@ -36,21 +19,18 @@ const items = [
   'All inclusive',
   'Kreta 2020',
   'Lato',
+  'Zima',
 ];
 
 export function MainMenu() {
   return (
-    <Container className="container">
-      <div className="section">
-        <div className="columns is-marginless">
-          {items.map(i => (
-            <div className="column">{i}</div>
-          ))}
-          <div className="column is-two-fifths" />
-        </div>
-        <Line />
-      </div>
-    </Container>
+    <div className="container d-flex flex-column" style={{ marginTop: '25px' }}>
+      <ButtonGroup className="mt-3">
+        {items.map(i => (
+          <Button className="main-menu-btn">{i}</Button>
+        ))}
+      </ButtonGroup>
+    </div>
   );
 }
 

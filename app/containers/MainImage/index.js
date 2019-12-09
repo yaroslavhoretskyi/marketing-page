@@ -8,10 +8,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import { Badge } from 'react-bootstrap';
 import { Search } from '../Search';
 
 const Section = styled.section`
-  background-image: url('https://wallpaperplay.com/walls/full/6/f/e/3065.jpg');
+  background-image: url('https://i.imgur.com/W0woZph.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 350px;
@@ -23,7 +24,7 @@ const Section = styled.section`
       align-items: center;
 
       .title {
-        color: #ffa31a;
+        color: #fad066;
       }
     }
   }
@@ -34,11 +35,21 @@ export function MainImage() {
     <>
       <Section className="hero image">
         <div className="hero-body">
-          <div className="container">
-            <div className="title is-size-2 has-text-centered">
-              Biuro Podróży
+          <div className="columns is-multiline">
+            <div className="column is-full">
+              <div className="title is-size-2 has-text-centered">
+                <Badge variant="dark" style={{ margin: '10px' }}>
+                  PRESTISSMO
+                </Badge>
+                <br />
+                <Badge variant="dark" style={{ margin: '10px' }}>
+                  Podróż życia w 5 minut!
+                </Badge>
+              </div>
+              <div className="column is-full">
+                <Search />
+              </div>
             </div>
-            <Search />
           </div>
         </div>
       </Section>

@@ -8,6 +8,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import styled from 'styled-components';
+import { Card, CardDeck, Badge } from 'react-bootstrap';
+import * as Fa from 'react-icons/fa';
 
 const Item = styled.div`
   position: relative;
@@ -36,18 +38,12 @@ const Information = styled.div`
 `;
 const Stars = styled.div`
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #66ccff;
+  top: 0;
+  right: 0;
   margin: 10px;
-  border-radius: 10px;
-  width: 80px;
-  height: 40px;
   opacity: 0.8;
   text-align: center;
-  color: #000099;
-  font-weight: 600;
-  font-size: 25px;
+  font-size: 15px;
 `;
 const Price = styled.div`
   position: absolute;
@@ -59,16 +55,23 @@ const Price = styled.div`
 `;
 
 export const Hotel = ({ rating, name, price, information, picture }) => (
-  <Item>
-    <Image picture={picture}>
+  <CardDeck>
+    <Card>
+      <Card.Img variant="top" src={picture} />
       <Stars>
-        <div>{rating}</div>
+        <Badge variant="light">
+          {rating} <Fa.FaStar />
+        </Badge>
       </Stars>
-    </Image>
-    <Name>{name}</Name>
-    <Information>{information}</Information>
-    <Price>{price}</Price>
-  </Item>
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{information}</Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        <small className="text-muted">{price}</small>
+      </Card.Footer>
+    </Card>
+  </CardDeck>
 );
 
 function mapDispatchToProps(dispatch) {
