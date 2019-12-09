@@ -7,7 +7,7 @@
     "url": "git://github.com/react-boilerplate/react-boilerplate.git"
   },
   "engines": {
-    "npm": ">=5",
+    "yarn": "~1.16",
     "node": ">=8.15.1"
   },
   "homepage": "https://yaroslavhoretskyi.github.io/marketing-page",
