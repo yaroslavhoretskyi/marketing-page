@@ -92,7 +92,7 @@
     "ip": "1.1.5",
     "lodash": "^4.17.15",
     "mdbreact": "^4.23.0",
-    "minimist": "1.2.0",
+    "minimist": "1.2.2",
     "node-sass": "^4.13.0",
     "prop-types": "15.7.2",
     "pure-react-carousel": "^1.24.1",
